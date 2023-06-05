@@ -21,7 +21,7 @@ public class Main {
         System.out.println("Задача 1");
 
         //int[] expenses = generateRandomArray();
-        int[] expenses = {10, 25, 40, 15, 20, 15};
+        int[] expenses = {20, 25, 40, 15, 10, 15};
         int sumMonth = 0;
         for (int expens : expenses) {
             sumMonth = sumMonth + expens;
@@ -37,12 +37,12 @@ public class Main {
         int[] expenses = {20, 25, 40, 15, 10, 15};
         int maxExpenses = 0;
         int minExpenses = 200_001;
-        for (int i = 0; i < expenses.length; i++) {
-            if (expenses[i] > maxExpenses) {
-                maxExpenses = expenses[i];
+        for (int expense : expenses) {
+            if (expense > maxExpenses) {
+                maxExpenses = expense;
             }
-            if (expenses[i] < minExpenses) {
-                minExpenses = expenses[i];
+            if (expense < minExpenses) {
+                minExpenses = expense;
             }
         }
         System.out.println("Минимальная сумма трат за день составила " + minExpenses + " рублей");
@@ -54,11 +54,11 @@ public class Main {
         System.out.println("Задача 3");
 
         //int[] arr = generateRandomArray();
-        int[] expenses = {10, 25, 40, 15, 20, 15};
+        int[] expenses = {20, 25, 40, 15, 10, 15};
 
         int sumMonth = 0;
-        for (int expens : expenses) {
-            sumMonth = sumMonth + expens;
+        for (int expense : expenses) {
+            sumMonth = sumMonth + expense;
         }
         double midExpenses = 1.00 * sumMonth / expenses.length;
 
