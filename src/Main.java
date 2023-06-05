@@ -20,8 +20,7 @@ public class Main {
     public static void task1() {
         System.out.println("Задача 1");
 
-        //int[] expenses = generateRandomArray();
-        int[] expenses = {20, 25, 40, 15, 10, 15};
+        int[] expenses = generateRandomArray();
         int sumMonth = 0;
         for (int expens : expenses) {
             sumMonth = sumMonth + expens;
@@ -33,8 +32,7 @@ public class Main {
     public static void task2() {
         System.out.println("Задача 2");
 
-        //int[] arr = generateRandomArray();
-        int[] expenses = {20, 25, 40, 15, 10, 15};
+        int[] expenses = generateRandomArray();
         int maxExpenses = 0;
         int minExpenses = 200_001;
         for (int expense : expenses) {
@@ -53,9 +51,7 @@ public class Main {
     public static void task3() {
         System.out.println("Задача 3");
 
-        //int[] arr = generateRandomArray();
-        int[] expenses = {20, 25, 40, 15, 10, 15};
-
+        int[] expenses = generateRandomArray();
         int sumMonth = 0;
         for (int expense : expenses) {
             sumMonth = sumMonth + expense;
